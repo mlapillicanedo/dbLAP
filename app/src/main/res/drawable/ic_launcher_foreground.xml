@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Barras del espectro FFT (centro en 54, línea base en y=74) -->
+
+    <!-- Barra 1: Baja frecuencia (Cian) -->
+    <path
+        android:pathData="M26,74 L26,62 A2,2 0 0,1 30,62 L30,74 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Barra 2 (Cian) -->
+    <path
+        android:pathData="M33,74 L33,52 A2,2 0 0,1 37,52 L37,74 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Barra 3 (Armónico, Verde Neón) -->
+    <path
+        android:pathData="M40,74 L40,42 A2,2 0 0,1 44,42 L44,74 Z"
+        android:fillColor="#00E676" />
+
+    <!-- Barra 4 (Armónico, Verde Neón) -->
+    <path
+        android:pathData="M47,74 L47,56 A2,2 0 0,1 51,56 L51,74 Z"
+        android:fillColor="#00E676" />
+
+    <!-- Barra Central 5: Pico de Frecuencia Fundamental (Dorado / Ámbar) -->
+    <path
+        android:pathData="M52,74 L52,28 A2.5,2.5 0 0,1 57,28 L57,74 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54.5"
+                android:startY="26"
+                android:endX="54.5"
+                android:endY="74"
+                android:type="linear">
+                <item android:color="#FFE082" android:offset="0.0" />
+                <item android:color="#FFB300" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Marcador de punto en el pico fundamental -->
+    <path
+        android:pathData="M54.5,24m-3,0a3,3 0 1,1 6,0a3,3 0 1,1 -6,0"
+        android:fillColor="#FFF9C4" />
+
+    <!-- Barra 6 (Verde Neón) -->
+    <path
+        android:pathData="M59,74 L59,48 A2,2 0 0,1 63,48 L63,74 Z"
+        android:fillColor="#00E676" />
+
+    <!-- Barra 7 (Cian) -->
+    <path
+        android:pathData="M66,74 L66,36 A2,2 0 0,1 70,36 L70,74 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Barra 8 (Cian) -->
+    <path
+        android:pathData="M73,74 L73,54 A2,2 0 0,1 77,54 L77,74 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Barra 9: Alta frecuencia (Cian) -->
+    <path
+        android:pathData="M80,74 L80,64 A2,2 0 0,1 84,64 L84,74 Z"
+        android:fillColor="#00E5FF" />
+
+    <!-- Onda senoidal suave que cruza el espectro -->
+    <path
+        android:pathData="M22,66 C30,66 34,44 42,44 C50,44 50,30 54.5,25 C59,30 60,38 68,38 C76,38 80,68 88,68"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- Sombra/Glow bajo la línea base -->
+    <path
+        android:pathData="M20,74 L88,74"
+        android:strokeWidth="1.5"
+        android:strokeColor="#38BDF8"
+        android:strokeLineCap="round" />
+</vector>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">db LAP</string>
+    <string name="title_fft">Analizador FFT</string>
+    <string name="subtitle_live">Micrófono en vivo</string>
+    <string name="btn_start">Iniciar</string>
+    <string name="btn_stop">Detener</string>
+    <string name="label_fundamental">FRECUENCIA FUNDAMENTAL</string>
+    <string name="label_no_pitch">Sin tono detectado</string>
+    <string name="label_level">NIVEL</string>
+    <string name="label_confidence">CONFIANZA</string>
+    <string name="label_spectrum">ESPECTRO DE FRECUENCIA</string>
+    <string name="label_spectrum_range">40 Hz – 16 kHz · Escala Log</string>
+    <string name="spectrum_idle_msg">Presiona Iniciar para capturar audio</string>
+    <string name="perm_title">Acceso al micrófono</string>
+    <string name="perm_desc">La aplicación necesita escuchar el micrófono para calcular la FFT y la frecuencia fundamental en tiempo real. El audio no se graba ni se envía.</string>
+    <string name="perm_allow">Permitir micrófono</string>
+    <string name="perm_settings">Abrir ajustes</string>
+</resources>
